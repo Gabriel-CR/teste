@@ -67,6 +67,7 @@ def gerarCertificados(alunos, size, caminhoImgCertificado, diretor):
         
         pdf.save()
 
+# python3 main.py certificado.png alunos.xlsx
 if __name__ == "__main__":
     caminhoImgCertificado, caminhoPlanilha = sys.argv[1], sys.argv[2]
     dados = lerDadosPdf(caminhoImgCertificado, caminhoPlanilha)
